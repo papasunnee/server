@@ -17,6 +17,6 @@
   },
   "scripts": {
     "dev": "nodemon index.js",
-    "start": "NODE_ENV=production node index.js -p $PORT"
+    "start": "NODE_ENV=production node index.js"
   }
 }
