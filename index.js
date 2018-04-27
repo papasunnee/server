@@ -3,6 +3,7 @@ const graphqlHTTP = require('express-graphql')
 const schema = require('./schema/schema')
 const mongoose = require('mongoose') 
 const cors = require('cors')
+const port = process.env.port || 9000
 
 const app = express()
 
@@ -18,4 +19,4 @@ app.use('/graphql', graphqlHTTP({
     graphiql : true
 }))
 
-app.listen(9000, () => { console.log("Listening to request on port 9000")})
+app.listen(port, () => { console.log(`Listening to request on port ${port}`)})
